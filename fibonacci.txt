@@ -1,0 +1,26 @@
+{sample program in TINY language -Prints the first n Fibonacci numbers (n is entered by the user)}
+
+read count; {read n from user}
+
+x := 0;
+
+y := 1;
+
+write x;
+
+write y;
+
+count := 0;
+
+repeat
+	temp := x + y;
+	
+	x := y;
+
+	y := temp;
+
+	write y;
+
+	count := count + 1
+
+until count = n - 2

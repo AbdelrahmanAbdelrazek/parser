@@ -1,0 +1,21 @@
+{sample program in TINY language -computes factorial or sum based on choice by user}
+
+read x;{input an integer}
+
+read choice;	{0 means compute sum, 1 means compute factorial}
+
+if(choice=0) then result := 0 else result := 1 end;
+
+repeat
+	
+	if(choice = 0) then
+		result := result + x
+	else
+		result := result * x
+	end;
+
+	x := x - 1
+
+until x = 0;
+
+write result
